@@ -1,7 +1,7 @@
 -- 
 -- Abstract: wrapper Library Plugin Test Project
 -- 
-
+-- Try different text, heights, widths, fontSizes etc.
 
 -- Load plugin library
 local wrapper = require "plugin.wrapper"
