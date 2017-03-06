@@ -9,10 +9,6 @@
 -- Load plugin library
 local wrapper = require "plugin.wrapper"
 
--------------------------------------------------------------------------------
--- BEGIN (Insert your sample test starting here)
--------------------------------------------------------------------------------
-
 local _W = display.contentWidth
 local _H = display.contentHeight
 
@@ -58,6 +54,3 @@ rect.strokeWidth = 1
 
 myParagraph:toFront()
 
--------------------------------------------------------------------------------
--- END
--------------------------------------------------------------------------------
