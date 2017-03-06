@@ -1,3 +1,107 @@
 # corona-wrapper-plugin-sample-code
 
-Hi
+--
+------------------------------------------------------------------------  
+--                            Wrapper Class                           --
+------------------------------------------------------------------------
+--
+-- v1.4
+--
+------------------------------------------------------------------------
+-- changelog
+------------------------------------------------------------------------
+--
+-- v1.1
+-- 1) Fixed errors with content scaling.
+-- 2) Added a new feature: you can now use \n for line break
+-- 3) In fact of the content-scaling error, alignment can not longer changed with the align function. 
+--    Its now fix after initialization.
+--
+-- v1.2
+-- 1) fixed bugs related to the new linebreak feature, should work now without limitations.
+--
+-- v1.21
+-- 1) little corrections
+-- 2) added new Parameters for speed tweaking (see parameter list)
+--
+-- v1.22
+-- 1) added fontSizeMax parameter
+--
+-- v1.23
+-- 1) fixed error caused by changes on coronas content-scaling, where size parameters are now relative to the content size.
+-- 2) small corrections
+--
+-- v1.24
+-- 1) fixed error caused by missed linebreakes if the string is fetched from a file
+--
+-- v1.3
+-- 1) adaptation to run with current corona versions
+-- 2) minor updates
+--
+-- v1.4
+-- 1) maintenance
+--
+--
+-- last change: 06.02.2017
+-- 
+--
+------------------------------------------------------------------------
+-- Known issues
+------------------------------------------------------------------------
+--
+-- 1. single words, which are wider then the preset-width will not split if no height is set, 
+--    width will be adjusted instead.
+--
+-- 2. In fact that a new text must be wrapped anyway, you have to generate a new object for text changes.
+--
+------------------------------------------------------------------------
+-- Instructions
+------------------------------------------------------------------------
+--
+-- what you get with the newParagraph-function is a normal display-group with text objects inside,
+-- so certainly they can handled as those.
+--
+-- use \n for line breaks
+--
+-- Study the sample-code and the parameter- and function-List for usage.
+--
+-- Feel free to contact me, if you have any questions or suggestions.
+--
+-- If you find a bug, please report it to me. Thanks.
+--
+------------------------------------------------------------------------
+-- Parameters
+------------------------------------------------------------------------
+--
+-- text 
+-- string. The text to display.
+--	
+-- width (optional, display-width*0.9 by default)   
+-- number. The desired width of the paragraph. 
+--
+-- height (optional, will be appointed automatically if not set)
+-- number. The desired height of the paragraph. IMPORTANT: If a height is set, The fontsize will be ignored and appointed automatically.
+--
+-- font (optional, systemFont by default)   
+-- string. The desired font.
+-- 	
+-- fontSize (optional, thirtieth of display-height by default) 
+-- number. The desired fontSize. Ignored if height is set.
+--  
+-- lineSpace (optional, depends on fontSize by default)
+-- number. You can increase/decrease with +/- values
+--
+-- alignment (optional, "center" by default)
+-- string. choose "left", "center"" or "right"" alignment
+--
+-- fontSizeMin (optional, 6 by default)
+-- number. This value is the start value for font-sizing if a height is set. Increase the number for speed improvement, but use with care.
+--  
+-- fontSizeMax (optional, 0 by default)
+-- number. If you want to have a limit of the font-size, here you can set it up. 0 means no limit.
+--
+-- incrementSize (optional, 1 by default)
+-- number. this is the amount of the fontsize raise for font-sizing. Higher numbers will speed up the sizing, but the result of the calculated fontsize is up to n-1 smaler as it could be.
+--
+-- fontColor must be set with myParagraph:setTextColor({r,g,b,[alpha]}) resp. myParagraph:setTextColor({gray,[alpha]})
+--
