@@ -39,7 +39,7 @@
 -- 2) minor updates
 --
 -- v1.4
--- 1) maintenance
+-- 1) maintenance and improvements
 --
 --
 -- last change: 06.02.2017
