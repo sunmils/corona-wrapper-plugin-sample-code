@@ -16,7 +16,7 @@ local textFrameHeight = 210
 local paragraphWidth = 200
 local paragraphHeight = 200
 
--- create a frame around the paragraph
+-- create a frame for the paragraph
 local rect = display.newRoundedRect(0,0,textFrameWidth, textFrameHeight, 15 )
 rect.anchorX = .5
 rect.anchorY = .5
