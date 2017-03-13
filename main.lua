@@ -47,7 +47,7 @@ local myParagraph = wrapper.newParagraph(
         fontSizeMax = 30
 })
 
--- displays the time needed for wrapping
+-- display the time needed for wrapping
 timeText = display.newText(tostring(system.getTimer() - t) .. " ms", 0, display.contentHeight - 22, nil, 20)
 timeText.anchorX = 0
 timeText.x = 10
