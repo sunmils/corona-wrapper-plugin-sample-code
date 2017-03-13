@@ -5,7 +5,7 @@
 --                            Wrapper Class                           --
 ------------------------------------------------------------------------
 --
--- v1.4
+-- v1.5
 --
 ------------------------------------------------------------------------
 -- changelog
@@ -41,10 +41,12 @@
 -- v1.4
 -- 1) maintenance and improvements
 --
+-- v1.5
+-- 1) added justify alignment, updated sample code
 --
--- last change: 06.02.2017
+--
+-- last change: 12.03.2017
 -- 
---
 ------------------------------------------------------------------------
 -- Known issues
 ------------------------------------------------------------------------
@@ -92,7 +94,7 @@
 -- number. You can increase/decrease with +/- values
 --
 -- alignment (optional, "center" by default)
--- string. choose "left", "center"" or "right"" alignment
+-- string. choose "left", "center", "right" or "justify" alignment
 --
 -- fontSizeMin (optional, 6 by default)
 -- number. This value is the start value for font-sizing if a height is set. Increase the number for speed improvement, but use with care.
