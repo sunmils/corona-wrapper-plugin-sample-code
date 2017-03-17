@@ -1,3 +1,3 @@
 # corona-wrapper-plugin-sample-code
 
--- wrapper plugin sample code v 1.0 
+-- v 1.0 
